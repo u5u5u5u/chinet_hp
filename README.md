@@ -8,12 +8,61 @@ $ cd chinet_hp   // ディレクトリ移動
 $ npm run dev    // 実行
 ```
 
-
 ## VS Code 拡張機能
 
 ### 必須
+
 - Prettier - Code formatter
 - ESLint
 
 ### 推奨
+
 - Auto Rename Tag
+
+# git 操作
+
+### 基本操作
+
+```
+$ git switch develop           // メインブランチに移動
+$ git pull origin develop
+$ git switch -c ブランチ名      // ブランチを作成・移動
+// 変更
+$ git add .
+$ git commit -m "コメント"
+$ git push origin ブランチ名
+```
+
+### [git command cheat sheet](https://broken-addition-f6a.notion.site/git-command-cheat-sheet-289ace2686e742f5bfe66560b9296074?pvs=4)
+
+# 規則
+
+### ブランチ名
+
+`feature/{issue 番号}_名前_やること(英語で)`
+
+※具体例: `feature/3_u5u5u5u_add_search-button`
+
+### コミットメッセージ
+
+`[接頭辞]変更点(日本語でいいよ)#{issue 番号}`
+
+※具体例: `[add]検索ボタン追加#3`
+
+| 接頭辞 | 意味     |
+| ------ | -------- |
+| add    | 新規追加 |
+| change | 仕様変更 |
+| update | 機能修正 |
+| fix    | バグ修正 |
+| remove | 削除     |
+
+### クラス名
+
+参考資料\
+https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-list.md
+
+### その他
+
+- コーディングを始めるときは、初めに以下のコマンドを打つ\
+  `$ git pull origin main`
