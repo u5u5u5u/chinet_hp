@@ -41,12 +41,14 @@ $ git push origin ブランチ名
 
 `feature/{issue 番号}_名前_やること(英語で)`
 
+※`{}`は不要\
 ※具体例: `feature/3_u5u5u5u_add_search-button`
 
 ### コミットメッセージ
 
 `[接頭辞]変更点(日本語でいいよ)#{issue 番号}`
 
+※`{}`は不要\
 ※具体例: `[add]検索ボタン追加#3`
 
 | 接頭辞 | 意味     |
@@ -65,4 +67,4 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 ### その他
 
 - コーディングを始めるときは、初めに以下のコマンドを打つ\
-  `$ git pull origin main`
+  `$ git pull origin develop`
