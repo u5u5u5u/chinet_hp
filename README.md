@@ -72,4 +72,7 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 ### その他
 
 - コーディングを始めるときは、初めに以下のコマンドを打つ\
-  `$ git pull origin develop`
+  ```
+  $ git pull origin develop
+  $ npm i
+  ```
