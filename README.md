@@ -76,5 +76,9 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
   $ git pull origin develop
   $ npm i
   ```
-  # メンバー
-  - koizumi
+
+# メンバー
+
+- yuuki
+- koizumi
+
