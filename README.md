@@ -81,4 +81,5 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 
 - yuuki
 - koizumi
+- U5
 
