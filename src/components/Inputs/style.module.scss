@@ -1,12 +1,16 @@
 
+.input {
+    margin:0 56px;
+}
 .inputField {
-    color: #333; /* •¶š‚ÌF */
-    background-color: #f0f0f0; /* ”wŒiF */
+    color: #333; 
+    background-color: white; 
     padding: 8px;
     border: 1px solid #777777;
     border-radius: 4px;
     width: 100%;
-    margin-bottom: 24px;
+    margin:4px 0px 32px 0px;
+    height: 48px;
 }
 
 .label {

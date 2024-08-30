@@ -8,11 +8,12 @@ type Props = {
 
 const Input = ({label}: Props) => {
     return (
-        <div>
+        <div className={styles.input}>
             <label className={styles.label} htmlFor="">{label}</label>
             <input className={styles.inputField} type="text" />
         </div>
     )
 }
 export default Input;
+
 
