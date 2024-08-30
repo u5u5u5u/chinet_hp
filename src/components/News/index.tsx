@@ -4,9 +4,9 @@ import styles from "./style.module.scss"; // 正しいインポートパスと�
 
 export default function NewsSection() {
   const newsItems = [
-    { id: 1, title: "News Item 1" },
-    { id: 2, title: "News Item 2" },
-    { id: 3, title: "News Item 3" },
+    { id: 1, title: "News 1" },
+    { id: 2, title: "News 2" },
+    { id: 3, title: "News 3" },
   ];
 
   return (
