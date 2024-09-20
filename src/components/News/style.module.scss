@@ -2,3 +2,20 @@
   font-size: 50px;
   color: aqua;
 }
+/* components/NewsSection.module.css */
+.newsSection {
+  padding: 20px;
+}
+
+.newsGrid {
+  display: flex;
+  gap: 20px;
+}
+
+.newsItem {
+  background-color: #f0f0f0;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+}
