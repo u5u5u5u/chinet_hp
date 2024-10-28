@@ -1,5 +1,5 @@
 import styles from "./style.module.scss";
 
-export default function Contact() {
+export default function Content() {
   return <></>;
 }
