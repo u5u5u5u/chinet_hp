@@ -13,7 +13,7 @@ export type Article = {
   title: string;
   category: Category;
   thumbnail: MicroCMSImage;
-  content: string;
+  contents: string;
 } & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
@@ -29,7 +29,7 @@ const client = createClient({
   apiKey: process.env.MICROCMS_API_KEY,
 });
 
-export const getArticles = async (queries?: MicroCMSQueries) => {
+export const getArticlesList = async (queries?: MicroCMSQueries) => {
   const listData = await client.getList<Article>({
     endpoint: "articles",
     queries,
