@@ -28,3 +28,11 @@ const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
   apiKey: process.env.MICROCMS_API_KEY,
 });
+
+export const getArticles = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<Article>({
+    endpoint: "articles",
+    queries,
+  });
+  return listData;
+};
