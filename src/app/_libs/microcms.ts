@@ -7,7 +7,14 @@ import type {
 
 export type Category = {
   name: string;
-};
+} & MicroCMSListContent;
+
+export type Article = {
+  title: string;
+  category: Category;
+  thumbnail: MicroCMSImage;
+  content: string;
+} & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
   throw new Error("MICROCMS_SERVICE_DOMAIN is required");
