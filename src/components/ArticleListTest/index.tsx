@@ -9,7 +9,6 @@ const ArticleListTest = ({ articles }: Props) => {
   if (articles.length === 0) {
     return <p>記事がありません</p>;
   }
-  console.log("articles", articles);
   return (
     <ul>
       {articles.map((article) => (
