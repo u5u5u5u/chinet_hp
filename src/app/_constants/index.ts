@@ -1,1 +1,1 @@
-export const TOP_ARTICLE_LIMIT = 5;
+export const TOP_ARTICLE_LIMIT = 2;
