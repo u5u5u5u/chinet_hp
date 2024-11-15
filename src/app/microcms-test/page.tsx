@@ -6,6 +6,7 @@ const microcmsTest = async () => {
   const data = await getArticlesList({
     limit: TOP_ARTICLE_LIMIT,
   });
+
   return (
     <>
       <h1>MicroCMS Test</h1>
