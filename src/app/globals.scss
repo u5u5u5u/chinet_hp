@@ -4,3 +4,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  // テーマカラ-の設定
+  // primary-color
+  --primary-green-50: #edfff2;
+  --primary-green-100: #d5ffe2;
+  --primary-green-200: #aeffc6;
+  --primary-green-300: #70ff9c;
+  --primary-green-400: #2bfd69;
+  --primary-green-500: #03ff4e;  // メイン
+  --primary-green-600: #00c034;
+  --primary-green-700: #00962c;
+  --primary-green-800: #067528;
+  --primary-green-900: #076024;
+  --primary-green-950: #003711;
+
+  --primary-blue-50: #ecf2ff;
+  --primary-blue-100: #dde7ff;
+  --primary-blue-200: #c2d3ff;
+  --primary-blue-300: #9cb4ff;
+  --primary-blue-400: #758aff;
+  --primary-blue-500: #5260ff;  // メイン
+  --primary-blue-600: #3636f5;
+  --primary-blue-700: #2d2ad8;
+  --primary-blue-800: #2525ae;
+  --primary-blue-900: #262989;
+  --primary-blue-950: #171650;
+
+  // secondary-color
+  --secondary-color-50: #f2fbfa;
+  --secondary-color-100: #d2f5f2;
+  --secondary-color-200: #a6e9e5;
+  --secondary-color-300: #71d7d5;
+  --secondary-color-400: #44bcbd;
+  --secondary-color-500: #2daaad;  // メイン
+  --secondary-color-600: #1f7e82;
+  --secondary-color-700: #1d6468;
+  --secondary-color-800: #1b5054;
+  --secondary-color-900: #1b4346;
+  --secondary-color-950: #0a2629;
+
+  // text-white
+  --text-white-50: #ffffff;  // メイン
+  --text-white-100: #efefef;
+  --text-white-200: #dcdcdc;
+  --text-white-300: #bdbdbd;
+  --text-white-400: #989898;
+  --text-white-500: #7c7c7c;
+  --text-white-600: #656565;
+  --text-white-700: #525252;
+  --text-white-800: #464646;
+  --text-white-900: #3d3d3d;
+  --text-white-950: #292929;
+
+  // text-black
+  --text-black-50: #f6f6f6;
+  --text-black-100: #e7e7e7;
+  --text-black-200: #d1d1d1;
+  --text-black-300: #b0b0b0;
+  --text-black-400: #888888;
+  --text-black-500: #6d6d6d;
+  --text-black-600: #5d5d5d;
+  --text-black-700: #4f4f4f;
+  --text-black-800: #454545;
+  --text-black-900: #3d3d3d;
+  --text-black-950: #000000;  // メイン
+}
