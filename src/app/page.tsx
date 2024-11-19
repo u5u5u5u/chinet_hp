@@ -8,7 +8,14 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <News />
-      <Link href="/contact">contact</Link>
+      <ul>
+        <li>
+          <Link href="/contact">contact</Link>
+        </li>
+        <li>
+          <Link href="/microcms-test">microcms test</Link>
+        </li>
+      </ul>
     </main>
   );
 }
