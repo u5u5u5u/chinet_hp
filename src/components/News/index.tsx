@@ -1,6 +1,5 @@
 // components/NewsSection.tsx
 import React from "react"; // Reactをインポートする
-import styles from "./style.module.scss"; // 正しいインポートパスとファイル名を使用
 
 export default function NewsSection() {
   const newsItems = [
@@ -10,11 +9,14 @@ export default function NewsSection() {
   ];
 
   return (
-    <div className={styles.news}>
+    <div>
       <h2>News</h2>
-      <div className={styles.newsGrid}>
+      <div className="flex gap-[20px]">
         {newsItems.map((item) => (
-          <div key={item.id} className={styles.newsItem}>
+          <div
+            key={item.id}
+            className="bg-gray-200 p-[20px] flex-1 text-center rounded-lg"
+          >
             {item.title}
           </div>
         ))}
