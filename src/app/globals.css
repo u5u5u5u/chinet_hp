@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSSの初期化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #020202;
+  --primary-color: #03ff4e;
+  --secondary-color: #5260ff;
+  --accent-color: #2daaad;
+  --text-white: #ffffff;
+  --text-black: #000000;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
