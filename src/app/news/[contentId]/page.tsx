@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { getArticleDetail } from "@/app/_libs/microcms";
 import type { Article } from "@/app/_libs/microcms";
+import { formatDate } from "@/lib/formatDate";
 
 interface Props {
   params: { contentId: string };
@@ -10,11 +11,11 @@ interface Props {
 
 const ArticleDetail = async ({ params }: Props) => {
   const { contentId } = params;
-  const article = await getArticleDetail(contentId);
+  const article: Article = await getArticleDetail(contentId);
+  console.log(typeof article.publishedAt); // string
 
   return (
     <article>
-      <h1>テスト</h1>
       <h1>{article.title}</h1>
       {article.thumbnail ? (
         <Image
@@ -27,8 +28,10 @@ const ArticleDetail = async ({ params }: Props) => {
         <p>サムネイルがありません</p>
       )}
       <p>{article.category.name}</p>
-      <p>{article.publishedAt}</p>
-      <p>{article.createdAt}</p>
+      <p>
+        {article.publishedAt ? formatDate(article.publishedAt) : "日付不明"}
+      </p>
+      <p>{article.createdAt ? formatDate(article.createdAt) : "日付不明"}</p>
       <div dangerouslySetInnerHTML={{ __html: article.contents }} />
     </article>
   );
