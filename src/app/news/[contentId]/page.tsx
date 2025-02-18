@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getArticleDetail } from "@/app/_libs/microcms";
 import type { Article } from "@/app/_libs/microcms";
 import { formatDate } from "@/lib/formatDate";
+import CategoryBadge from "@/components/CategoryBadge";
 
 interface Props {
   params: { contentId: string };
@@ -12,7 +13,6 @@ interface Props {
 const ArticleDetail = async ({ params }: Props) => {
   const { contentId } = params;
   const article: Article = await getArticleDetail(contentId);
-  console.log(typeof article.publishedAt); // string
 
   return (
     <article>
@@ -27,7 +27,7 @@ const ArticleDetail = async ({ params }: Props) => {
       ) : (
         <p>サムネイルがありません</p>
       )}
-      <p>{article.category.name}</p>
+      <CategoryBadge category={article.category} />
       <p>
         {article.publishedAt ? formatDate(article.publishedAt) : "日付不明"}
       </p>
