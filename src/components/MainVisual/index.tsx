@@ -1,8 +1,11 @@
 const MainVisual = () => {
   return (
     <div>
-      <h1>MainVisual</h1>
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden line-height-0 transform rotate-180">
+      <h1>
+        <span>子どもたちの</span>
+        <span>未来のために</span>
+      </h1>
+      <div className="w-full overflow-hidden line-height-0 transform rotate-180">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
