@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Activities from "@/components/Activities";
 import News from "@/components/News";
 import Link from "next/link";
 
@@ -6,6 +7,7 @@ export default function Home() {
   return (
     <main>
       <About />
+      <Activities />
       <News />
       <ul>
         <li>
