@@ -3,6 +3,8 @@ import News from "@/components/News";
 import Link from "next/link";
 
 export default function Home() {
+  console.log("MICROCMS_SERVICE_DOMAIN", process.env.MICROCMS_SERVICE_DOMAIN);
+
   return (
     <main>
       <Header />
