@@ -55,11 +55,7 @@ export default async function NewsSection() {
                       {content.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="p-3">
-                    <CardDescription className="text-xs text-gray-600">
-                      {content.description || "詳細はありません"}
-                    </CardDescription>
-                  </CardContent>
+                  <CardContent className="p-3"></CardContent>
                 </Card>
               </CarouselItem>
             ))}
