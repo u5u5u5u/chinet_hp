@@ -11,7 +11,6 @@ import { getArticlesList } from "@/app/_libs/microcms";
 import { TOP_ARTICLE_LIMIT } from "@/app/_constants";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-
 export default async function NewsSection() {
   const data = await getArticlesList({
     limit: TOP_ARTICLE_LIMIT,
