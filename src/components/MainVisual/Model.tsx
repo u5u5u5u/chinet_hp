@@ -1,7 +1,7 @@
 import { useFBX } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useEffect, useRef } from "react";
-import { AnimationMixer } from "three";
+import { Mesh, AnimationMixer } from "three";
 
 interface ModelProps {
   url: string;
@@ -9,22 +9,16 @@ interface ModelProps {
 
 const Model: React.FC<ModelProps> = ({ url }) => {
   const fbx = useFBX(url);
-  const mixerRef = useRef<AnimationMixer | null>(null);
+  const meshRef = useRef<Mesh | null>(null);
 
-  useEffect(() => {
-    // モーション再生
-    if (fbx.animations.length > 0) {
-      const mixer = new AnimationMixer(fbx);
-      mixer.clipAction(fbx.animations[1]).play();
-      mixerRef.current = mixer;
+  useFrame(() => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += 0.005;
+      meshRef.current.rotation.x += 0.005;
     }
-  }, [fbx]);
-
-  useFrame((state, delta) => {
-    mixerRef.current?.update(delta);
   });
 
-  return <primitive object={fbx} />;
+  return <primitive ref={meshRef} object={fbx} />;
 };
 
 export default Model;

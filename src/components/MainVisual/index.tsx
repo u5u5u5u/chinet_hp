@@ -3,7 +3,9 @@ import Earth from "./Earth";
 const MainVisual = () => {
   return (
     <div>
-      <Earth />
+      <div className="">
+        <Earth />
+      </div>
       <h1>
         <span>子どもたちの</span>
         <span>未来のために</span>
