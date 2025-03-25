@@ -1,3 +1,10 @@
-import { getArticlesList } from "@/app/_libs/microcms";
-import NewsSection from "@/components/News/index";
-import { TOP_ARTICLE_LIMIT } from "@/app/_constants";
+const News = () => {
+  return (
+    <div>
+      <h1>News</h1>
+      <p>News page</p>
+    </div>
+  );
+};
+
+export default News;
