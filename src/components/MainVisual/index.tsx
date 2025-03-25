@@ -1,6 +1,9 @@
+import Earth from "./Earth";
+
 const MainVisual = () => {
   return (
     <div>
+      <Earth />
       <h1>
         <span>子どもたちの</span>
         <span>未来のために</span>

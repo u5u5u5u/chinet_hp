@@ -10,17 +10,21 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
+    "@react-three/drei": "^10.0.5",
+    "@react-three/fiber": "^9.1.0",
+    "@types/three": "^0.174.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",
     "lucide-react": "^0.468.0",
     "microcms-js-sdk": "^3.1.2",
-    "next": "^14.2.4",
+    "next": "^15.2.4",
     "nextjs-basic-auth-middleware": "^3.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@types/node": "^20",
