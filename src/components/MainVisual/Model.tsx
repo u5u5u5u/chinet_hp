@@ -18,7 +18,7 @@ const Model: React.FC<ModelProps> = ({ url }) => {
     }
   });
 
-  return <primitive ref={meshRef} object={fbx} />;
+  return <primitive ref={meshRef} object={fbx} position={[-50, 0, 0]} />;
 };
 
 export default Model;

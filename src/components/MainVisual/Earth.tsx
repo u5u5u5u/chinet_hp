@@ -7,7 +7,13 @@ import Model from "./Model";
 const Earth = () => {
   return (
     <>
-      <Canvas camera={{ position: [0, 0, 500] }} style={{ height: "80vh" }}>
+      <Canvas
+        camera={{ position: [0, 0, 180] }}
+        style={{
+          height: "100vh",
+          width: "50vh",
+        }}
+      >
         <ambientLight intensity={2.0} />
         <directionalLight color="white" position={[0, 0, 5]} />
         <Model url="/earth.fbx" />
