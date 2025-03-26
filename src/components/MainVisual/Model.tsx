@@ -1,7 +1,7 @@
 import { useFBX } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import React, { useEffect, useRef } from "react";
-import { Mesh, AnimationMixer } from "three";
+import React, { useRef } from "react";
+import { Mesh } from "three";
 
 interface ModelProps {
   url: string;
