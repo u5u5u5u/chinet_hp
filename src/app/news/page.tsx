@@ -1,5 +1,11 @@
-import styles from "./style.module.scss";
+const News = () => {
+  return (
+    <>
+      <div className="container mx-auto">
+        <h1>News</h1>
+      </div>
+    </>
+  );
+};
 
-export default function Content() {
-  return <></>;
-}
+export default News;

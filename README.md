@@ -44,7 +44,7 @@ $ git push origin ブランチ名
 
 ### ブランチ名
 
-`feature/#{issue 番号}_名前_やること(英語で)`
+`feature/#{issue 番号}_やること(英語で)`
 
 ※`{}`は不要\
 ※具体例: `feature/#3_u5u5u5u_add_search-button`
