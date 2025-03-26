@@ -4,11 +4,11 @@ import type { Article as ArticleType } from "@/app/_libs/microcms";
 import Article from "@/components/Article";
 
 interface Props {
-  params: { contentId: string };
+  params: Promise<{ contentId: string }>;
 }
 
 const ArticleDetail = async ({ params }: Props) => {
-  const { contentId } = params;
+  const { contentId } = await params;
   const article: ArticleType = await getArticleDetail(contentId).catch(
     notFound
   );
