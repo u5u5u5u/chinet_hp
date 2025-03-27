@@ -1,5 +1,6 @@
-import React from "react";
-import Image from "next/image";
+import { TOP_ARTICLE_LIMIT } from "@/app/_constants";
+import { getArticlesList } from "@/app/_libs/microcms";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -7,19 +8,19 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getArticlesList } from "@/app/_libs/microcms";
-import { TOP_ARTICLE_LIMIT } from "@/app/_constants";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 import Link from "next/link";
+import Heading from "@/components/Heading";
+
 export default async function NewsSection() {
   const data = await getArticlesList({
     limit: TOP_ARTICLE_LIMIT,
   });
 
   return (
-    <div className="bg-[#0b1e3f] py-10">
-      <h2 className="text-white text-2xl text-center mb-6">News</h2>
-      <div className="flex justify-center">
+    <div className="bg-[#131c4d] py-20">
+      <div className="flex flex-col justify-center items-center">
+        <Heading title="News" />
         <Carousel className="w-full max-w-5xl">
           <CarouselContent className="flex gap-4">
             {data.contents.map((content, index) => (
