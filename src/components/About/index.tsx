@@ -1,6 +1,9 @@
+import Heading from "@/components/Heading";
+
 const About = () => {
   return (
     <div className="w-[60%] py-20 mx-auto">
+      <Heading title="About" />
       <p className="text-xl text-center leading-[4]">
         私たち「勉楽のつどい」は
         <br />
