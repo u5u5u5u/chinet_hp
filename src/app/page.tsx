@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Activities from "@/components/Activities";
+import Information from "@/components/Information";
 import MainVisual from "@/components/MainVisual";
 import News from "@/components/News";
 import Link from "next/link";
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <Activities />
       <News />
+      <Information />
       <ul>
         <li>
           <Link href="/contact">contact</Link>
