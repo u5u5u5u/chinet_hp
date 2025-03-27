@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center space-y-8 py-10">
+    <footer className="flex flex-col items-center justify-between space-y-8 h-[40vh] bg-[url('/footer.png')] bg-cover bg-no-repeat bg-opacity-0 pt-40 pb-10">
       <div className="flex justify-between items-center container mx-auto px-4">
         <p className="text-2xl">地球っ子ネットワーク</p>
         <nav>
