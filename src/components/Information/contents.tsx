@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -26,7 +27,12 @@ export const InformationContents: InformationContentsProps[] = [
         href="https://www.instagram.com/chinet_kit?igsh=OHhqNGhmemg0c2ts"
         target="_blank"
       >
-        Instagram
+        <Image
+          src="/icons/instagram.svg"
+          width={100}
+          height={100}
+          alt="Instagram"
+        />
       </Link>
     ),
   },
