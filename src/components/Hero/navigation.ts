@@ -1,5 +1,3 @@
-import { getHmrRefreshHash } from "next/dist/server/app-render/work-unit-async-storage.external";
-
 interface NavigationType {
   title: string;
   sub_title?: string;
