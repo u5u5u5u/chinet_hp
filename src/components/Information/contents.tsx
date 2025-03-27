@@ -29,8 +29,8 @@ export const InformationContents: InformationContentsProps[] = [
       >
         <Image
           src="/icons/instagram.svg"
-          width={100}
-          height={100}
+          width={50}
+          height={50}
           alt="Instagram"
         />
       </Link>
