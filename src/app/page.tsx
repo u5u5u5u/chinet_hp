@@ -4,6 +4,7 @@ import Information from "@/components/Information";
 import MainVisual from "@/components/MainVisual";
 import News from "@/components/News";
 import Link from "next/link";
+import Greeting from "@/components/Greeting";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Activities />
       <News />
+      <Greeting />
       <Information />
       <ul>
         <li>
