@@ -24,7 +24,7 @@ const Activities = () => {
         </div>
       </section>
       <section className="flex justify-between">
-        <div className="flex flex-col justify-center space-y-4 w-[600px] h-[500px] border-2 shadow-xl rounded-[41%_59%_28%_72%_/_35%_20%_80%_65%] backdrop-blur-sm px-[8%] mt-48 -mr-40">
+        <div className="flex flex-col justify-center space-y-4 w-[70%] lg:w-[600px] lg:h-[500px] border-2 shadow-xl rounded-[41%_59%_28%_72%_/_35%_20%_80%_65%] backdrop-blur-sm px-[8%] mt-48 -mr-40">
           <h3 className="text-3xl font-bold">02 イベント開催</h3>
           <p className="leading-loose">
             月に1回(※2)、色々なイベントを中高生対象で行っています。
@@ -32,7 +32,7 @@ const Activities = () => {
             月に1回ですが、みなさんによりよいイベント、経験をお届けできるよう頑張っています。
           </p>
         </div>
-        <div className="lg:w-[600px] lg:h-[500px]">
+        <div className="w-[70%] lg:w-[600px] lg:h-[500px]">
           <Image
             src="/images/activity2.png"
             width={1000}
