@@ -2,13 +2,15 @@ import Earth from "./Earth";
 
 const MainVisual = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-br from-[#5260FF] to-[#03FF4E] text-white">
+    <div className="flex flex-col bg-gradient-to-br from-[#5260FF] to-[#03FF4E] text-white pt-20">
       <div className="flex items-center">
         <Earth />
-        <h1 className="text-9xl font-bold pl-[5rem] leading-loose">
+        <h1 className="absolute right-10 sm:right-10 lg:right-6 xl:right-20 text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-loose">
           <span>子どもたちの</span>
           <br />
-          <span className="pl-[10rem]">未来のために</span>
+          <span className="block pl-10 sm:pl-20 lg:pl-[10rem] sm:mt-20">
+            未来のために
+          </span>
         </h1>
       </div>
       <div className="w-full overflow-hidden line-height-0 transform rotate-180">
@@ -17,7 +19,7 @@ const MainVisual = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="relative block w-[calc(175%+1.3px)] h-36 transform rotate-y-180"
+          className="relative block w-[calc(175%+1.3px)] h-[10vw] transform rotate-y-180"
         >
           <path
             d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"

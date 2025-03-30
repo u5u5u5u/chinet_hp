@@ -10,7 +10,8 @@ const Earth = () => {
         camera={{ position: [0, 0, 180] }}
         style={{
           height: "100vh",
-          width: "50vh",
+          width: "100%",
+          maxWidth: "1000px",
         }}
       >
         <ambientLight intensity={2.0} />
