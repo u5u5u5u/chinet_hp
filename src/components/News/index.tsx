@@ -8,8 +8,6 @@ export default async function NewsSection() {
     limit: TOP_ARTICLE_LIMIT,
   });
 
-  console.log(data);
-
   return (
     <div className="bg-[#131c4d] py-20">
       <div className="flex flex-col justify-center items-center">
