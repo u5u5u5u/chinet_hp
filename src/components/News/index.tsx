@@ -1,16 +1,14 @@
 import { TOP_ARTICLE_LIMIT } from "@/app/_constants";
 import { getArticlesList } from "@/app/_libs/microcms";
+import Heading from "@/components/Heading";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "@/components/Heading";
 
 export default async function NewsSection() {
   const data = await getArticlesList({
@@ -52,8 +50,6 @@ export default async function NewsSection() {
               </Link>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </div>
     </div>
