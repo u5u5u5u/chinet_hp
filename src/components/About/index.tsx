@@ -2,9 +2,9 @@ import Heading from "@/components/Heading";
 
 const About = () => {
   return (
-    <div className="w-[60%] py-20 mx-auto">
+    <div className="w-[80%] py-20 mx-auto">
       <Heading title="About" />
-      <p className="text-xl text-center leading-[4]">
+      <p className="sm:text-xl text-center leading-[3] sm:leading-[4]">
         私たち「勉楽のつどい」は
         <br />
         子どもたちの可能性を少しでも広げたい思いを持った大学生たちが
