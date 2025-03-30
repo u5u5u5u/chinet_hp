@@ -3,7 +3,7 @@ import Heading from "@/components/Heading";
 
 const Activities = () => {
   return (
-    <div className="flex flex-col items-center space-y-20 bg-foreground text-black py-20">
+    <div className="flex flex-col items-center space-y-20 bg-[#c2c2c2] text-black py-20">
       <Heading title="Activities" />
       <section className="flex justify-between">
         <div className="w-[600px] h-[500px]">
