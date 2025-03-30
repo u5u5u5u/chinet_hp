@@ -2,7 +2,7 @@ import Earth from "./Earth";
 
 const MainVisual = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-br from-[#5260FF] to-[#03FF4E] text-white">
+    <div className="flex flex-col bg-gradient-to-br from-[#5260FF] to-[#03FF4E] text-white pt-20">
       <div className="flex items-center">
         <Earth />
         <h1 className="text-9xl font-bold pl-[5rem] leading-loose">

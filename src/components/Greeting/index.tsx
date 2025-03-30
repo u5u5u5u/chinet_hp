@@ -3,7 +3,7 @@ import Heading from "@/components/Heading";
 
 const Greeting = () => {
   return (
-    <div className="bg-foreground text-black py-20">
+    <div className="bg-[#c2c2c2] text-black py-20">
       <div className="flex flex-col items-center justify-center w-[80%] max-w-[1000px] mx-auto">
         <Heading title="Greeting" />
         <div className="flex items-center justify-center space-x-10 w-full">
