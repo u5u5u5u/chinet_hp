@@ -5,7 +5,12 @@ import { heroNavigation } from "./navigation";
 
 const Hero = () => {
   const url = usePathname();
-  const navigation = heroNavigation.find((nav) => nav.href === url);
+  // urlがheroNavigationのhrefが含まれているかを確認
+  const navigation = heroNavigation.find((nav) => {
+    const href = nav.href;
+    // urlがhrefで始まるかを確認
+    return url.startsWith(href);
+  });
   if (!navigation) return null;
 
   return (
