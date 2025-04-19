@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 
 const Header = () => {
@@ -55,27 +56,51 @@ const Header = () => {
           >
             <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
               <li className="font-bold hover:underline">
-                <Link href="/#greeting" onClick={() => setIsOpen(!isOpen)}>
-                  ご挨拶
-                </Link>
+                <ScrollLink
+                  to="greeting"
+                  smooth={true}
+                  duration={500}
+                  offset={-96}
+                  onClick={closeMenu}
+                >
+                  <Link href="/#greeting" onClick={closeMenu}>
+                    ご挨拶
+                  </Link>
+                </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
-                <Link href="/#activities" onClick={closeMenu}>
-                  活動内容
-                </Link>
+                <ScrollLink
+                  to="activities"
+                  smooth={true}
+                  duration={500}
+                  offset={-96}
+                  onClick={closeMenu}
+                >
+                  <Link href="/#activities" onClick={closeMenu}>
+                    活動内容
+                  </Link>
+                </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
-                <Link href="/#news" onClick={closeMenu}>
+                <Link href="news" onClick={closeMenu}>
                   お知らせ
                 </Link>
               </li>
               <li className="font-bold hover:underline">
-                <Link href="/#organization" onClick={closeMenu}>
-                  団体情報
-                </Link>
+                <ScrollLink
+                  to="information"
+                  smooth={true}
+                  duration={500}
+                  offset={-96}
+                  onClick={closeMenu}
+                >
+                  <Link href="/#information" onClick={closeMenu}>
+                    団体情報
+                  </Link>
+                </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
-                <Link href="/#contact" onClick={closeMenu}>
+                <Link href="contact" onClick={closeMenu}>
                   お問い合わせ
                 </Link>
               </li>
