@@ -35,13 +35,8 @@ export const InformationContents: InformationContentsProps[] = [
             alt="Instagram"
           />
         </Link>
-        <Link href="https://twitter.com/chinet_kit" target="_blank">
-          <Image
-            src="/icons/x.svg"
-            width={40}
-            height={40}
-            alt="X"
-          />
+        <Link href="https://x.com/chinet_kit" target="_blank">
+          <Image src="/icons/x.svg" width={40} height={40} alt="X" />
         </Link>
       </div>
     ),
