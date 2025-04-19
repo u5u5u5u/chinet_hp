@@ -23,17 +23,22 @@ export const InformationContents: InformationContentsProps[] = [
   {
     title: "SNS",
     detail: (
-      <Link
-        href="https://www.instagram.com/chinet_kit?igsh=OHhqNGhmemg0c2ts"
-        target="_blank"
-      >
-        <Image
-          src="/icons/instagram.svg"
-          width={50}
-          height={50}
-          alt="Instagram"
-        />
-      </Link>
+      <div className="flex space-x-4">
+        <Link
+          href="https://www.instagram.com/chinet_kit?igsh=OHhqNGhmemg0c2ts"
+          target="_blank"
+        >
+          <Image
+            src="/icons/instagram.svg"
+            width={40}
+            height={40}
+            alt="Instagram"
+          />
+        </Link>
+        <Link href="https://x.com/chinet_kit" target="_blank">
+          <Image src="/icons/x.svg" width={40} height={40} alt="X" />
+        </Link>
+      </div>
     ),
   },
 ];
