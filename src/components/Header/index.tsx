@@ -7,6 +7,10 @@ import { useState } from "react";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <header className="fixed top-0 left-0 z-[100000] w-full h-24 bg-white/10">
@@ -45,18 +49,36 @@ const Header = () => {
             </div>
           </button>
           <nav
-            className={`fixed top-0 right-0 h-full bg-white text-black transform ${
+            className={`fixed top-0 right-0 h-full text-black transform ${
               isOpen ? "w-full bg-white/70 translate-x-0" : "translate-x-full"
             } transition-transform duration-500 max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
             <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
               <li className="font-bold hover:underline">
-                <Link href="">ご挨拶</Link>
+                <Link href="/#greeting" onClick={() => setIsOpen(!isOpen)}>
+                  ご挨拶
+                </Link>
               </li>
-              <li className="font-bold hover:underline">活動内容</li>
-              <li className="font-bold hover:underline">お知らせ</li>
-              <li className="font-bold hover:underline">団体情報</li>
-              <li className="font-bold hover:underline">お問い合わせ</li>
+              <li className="font-bold hover:underline">
+                <Link href="/#activities" onClick={closeMenu}>
+                  活動内容
+                </Link>
+              </li>
+              <li className="font-bold hover:underline">
+                <Link href="/#news" onClick={closeMenu}>
+                  お知らせ
+                </Link>
+              </li>
+              <li className="font-bold hover:underline">
+                <Link href="/#organization" onClick={closeMenu}>
+                  団体情報
+                </Link>
+              </li>
+              <li className="font-bold hover:underline">
+                <Link href="/#contact" onClick={closeMenu}>
+                  お問い合わせ
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
