@@ -4,9 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { headerNavigation } from "./navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isTopPage = pathname === "/";
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -55,55 +59,29 @@ const Header = () => {
             } transition-transform duration-500 max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
             <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
-              <li className="font-bold hover:underline">
-                <ScrollLink
-                  to="greeting"
-                  smooth={true}
-                  duration={500}
-                  offset={-96}
-                  onClick={closeMenu}
-                >
-                  <Link href="/#greeting" onClick={closeMenu}>
-                    ご挨拶
-                  </Link>
-                </ScrollLink>
-              </li>
-              <li className="font-bold hover:underline">
-                <ScrollLink
-                  to="activities"
-                  smooth={true}
-                  duration={500}
-                  offset={-96}
-                  onClick={closeMenu}
-                >
-                  <Link href="/#activities" onClick={closeMenu}>
-                    活動内容
-                  </Link>
-                </ScrollLink>
-              </li>
-              <li className="font-bold hover:underline">
-                <Link href="news" onClick={closeMenu}>
-                  お知らせ
-                </Link>
-              </li>
-              <li className="font-bold hover:underline">
-                <ScrollLink
-                  to="information"
-                  smooth={true}
-                  duration={500}
-                  offset={-96}
-                  onClick={closeMenu}
-                >
-                  <Link href="/#information" onClick={closeMenu}>
-                    団体情報
-                  </Link>
-                </ScrollLink>
-              </li>
-              <li className="font-bold hover:underline">
-                <Link href="contact" onClick={closeMenu}>
-                  お問い合わせ
-                </Link>
-              </li>
+              {headerNavigation.map((nav) => (
+                <li key={nav.name}>
+                  {nav.inTopPage && isTopPage ? (
+                    <ScrollLink
+                      to={nav.href}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                      onClick={closeMenu}
+                    >
+                      {nav.name}
+                    </ScrollLink>
+                  ) : nav.inTopPage ? (
+                    <Link href={`/#${nav.href}`} onClick={closeMenu}>
+                      {nav.name}
+                    </Link>
+                  ) : (
+                    <Link href={`/${nav.href}`} onClick={closeMenu}>
+                      {nav.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
