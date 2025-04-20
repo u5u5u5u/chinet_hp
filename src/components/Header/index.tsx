@@ -35,32 +35,37 @@ const Header = () => {
           </Link>
           <button
             className="md:hidden block focus:outline-none z-10"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              console.log(isOpen);
+            }}
           >
             <div className="relative w-8 h-6">
               <span
-                className={`absolute block w-8 h-1 bg-white transform transition-transform duration-300 ${
-                  isOpen ? "rotate-45 top-2.5 bg-black" : "top-0"
+                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
+                  isOpen ? "rotate-45 top-2.5 bg-black" : "top-0 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 bg-white transform transition-opacity duration-300 ${
-                  isOpen ? "opacity-0" : "top-2.5"
+                className={`absolute block w-8 h-1 transform transition-opacity duration-500 ${
+                  isOpen ? "opacity-0" : "top-2.5 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 bg-white transform transition-transform duration-300 ${
-                  isOpen ? "-rotate-45 top-2.5 bg-black" : "top-5"
+                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
+                  isOpen ? "-rotate-45 top-2.5 bg-black" : "top-5 bg-white"
                 }`}
               ></span>
             </div>
           </button>
           <nav
-            className={`fixed top-0 right-0 h-full text-black transform ${
-              isOpen ? "w-full bg-white/70 translate-x-0" : "translate-x-full"
-            } transition-transform duration-500 max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
+            className={`fixed top-0 right-0 h-full text-black transform transition-all duration-1000 ease-in-out ${
+              isOpen
+                ? "w-full bg-white/70 translate-x-0"
+                : "w-full translate-x-full bg-transparent opacity-0"
+            } max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
-            <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
+            <ul className="flex flex-col items-center gap-4 md:flex-row md:p-0 font-bold">
               {navigation.map((nav) => (
                 <li key={nav.name}>
                   {nav.inTopPage && isTopPage ? (
