@@ -14,7 +14,11 @@ const Footer = () => {
     <footer className="flex flex-col items-center justify-between space-y-8 h-[40vh] bg-[url('/footer.png')] bg-cover bg-no-repeat bg-opacity-0 pt-32 pb-10 px-4">
       <div className="flex justify-between container mx-auto px-4">
         <div className="space-y-4">
-          <p className="text-xl md:text-2xl font-bold">地球っ子ネットワーク</p>
+          <Link href="/">
+            <p className="text-xl md:text-2xl font-bold">
+              地球っ子ネットワーク
+            </p>
+          </Link>
           <Image
             src="/images/chinet-icon.png"
             alt="Logo"

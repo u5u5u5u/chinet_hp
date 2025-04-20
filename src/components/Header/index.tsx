@@ -28,9 +28,11 @@ const Header = () => {
           className="absolute top-0 left-0 -z-10 m-4 h-16 w-auto rounded-full opacity-30"
         />
         <div className="flex items-center justify-between h-full text-white p-6">
-          <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
-            地球っ子ネットワーク
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
+              地球っ子ネットワーク
+            </h1>
+          </Link>
           <button
             className="md:hidden block focus:outline-none z-10"
             onClick={() => setIsOpen(!isOpen)}
