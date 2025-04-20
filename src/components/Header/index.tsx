@@ -63,9 +63,7 @@ const Header = () => {
                   offset={-96}
                   onClick={closeMenu}
                 >
-                  <Link href="/#greeting" onClick={closeMenu}>
-                    ご挨拶
-                  </Link>
+                  ご挨拶
                 </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
@@ -76,9 +74,7 @@ const Header = () => {
                   offset={-96}
                   onClick={closeMenu}
                 >
-                  <Link href="/#activities" onClick={closeMenu}>
-                    活動内容
-                  </Link>
+                  活動内容
                 </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
@@ -94,9 +90,7 @@ const Header = () => {
                   offset={-96}
                   onClick={closeMenu}
                 >
-                  <Link href="/#information" onClick={closeMenu}>
-                    団体情報
-                  </Link>
+                  団体情報
                 </ScrollLink>
               </li>
               <li className="font-bold hover:underline">
