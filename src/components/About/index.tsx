@@ -4,31 +4,40 @@ const About = () => {
   return (
     <div className="w-[80%] py-20 mx-auto">
       <Heading title="About" />
-      <p className="sm:text-xl text-center leading-[3] sm:leading-[4]">
-        私たち「勉楽のつどい」は
-        <br />
-        子どもたちの可能性を少しでも広げたい思いを持った大学生たちが
-        <br />
-        設立した団体です。
-        <br />
-        代表の朝岡が 地域の無料で使えた自習室の存在によって進路実現を果たし、
-        <br />
-        自分と同じように学びたいのに環境が充分でない子どもの力になりたい、
-        <br />
-        座学以外の様々な学びにつながる機会を与えたい
-        <br />
-        と思い様々な活動を行なっております。
-        <br />
-        設立当初は大学の組織としてではなく、独立して活動していましたが、
-        <br />
-        現在は飯塚市、麻生グループ、九工大の「地球っ子ネットワーク」に加わり、
-        <br />
-        その中の一事業という立場になりました。
-        <br />
-        これからも設立時の思いを忘れずに、子どもたちの未来のために
-        <br />
-        行動できればと考えております。
-      </p>
+      <div className="text-base sm:text-lg md:text-xl text-center ">
+        <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
+          <span className="inline-block">地球っ子ネットワークは</span>
+          <span className="inline-block">
+            九工大の学生と（株）麻生、 飯塚市が
+          </span>
+          <span className="inline-block">連携して活動する</span>
+          <span className="inline-block">教育ボランティア団体です。</span>
+        </p>
+        <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
+          <span className="inline-block">
+            子どもたちの可能性を少しでも広げたい
+          </span>
+          <span className="inline-block">思いを持った大学生たちが</span>
+          <span className="inline-block">活動しています。</span>
+        </p>
+        <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
+          <span className="inline-block">私たちは、子どもたちの学びに</span>
+          <span className="inline-block">つながるような体験を</span>
+          <span className="inline-block">届けることを目指し、</span>
+          <span className="inline-block">
+            プログラミング教室、学習支援など、
+          </span>
+          <span className="inline-block">さまざまな活動を行っています。</span>
+        </p>
+        <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
+          <span className="inline-block">
+            九工大生ならではのアイデアを活かして、
+          </span>
+          <span className="inline-block">
+            地域に根ざした教育支援を実践しています。
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
