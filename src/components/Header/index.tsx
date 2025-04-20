@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { headerNavigation } from "./navigation";
+import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import { navigation } from "./navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ const Header = () => {
             } transition-transform duration-500 max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
             <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
-              {headerNavigation.map((nav) => (
+              {navigation.map((nav) => (
                 <li key={nav.name}>
                   {nav.inTopPage && isTopPage ? (
                     <ScrollLink
