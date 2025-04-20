@@ -4,7 +4,7 @@ interface NavigationType {
   inTopPage?: boolean;
 }
 
-export const headerNavigation: NavigationType[] = [
+export const navigation: NavigationType[] = [
   {
     name: "ご挨拶",
     href: "greeting",

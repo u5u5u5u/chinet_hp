@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { headerNavigation } from "./navigation";
+import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import { navigation } from "./navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +28,11 @@ const Header = () => {
           className="absolute top-0 left-0 -z-10 m-4 h-16 w-auto rounded-full opacity-30"
         />
         <div className="flex items-center justify-between h-full text-white p-6">
-          <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
-            地球っ子ネットワーク
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
+              地球っ子ネットワーク
+            </h1>
+          </Link>
           <button
             className="md:hidden block focus:outline-none z-10"
             onClick={() => setIsOpen(!isOpen)}
@@ -59,7 +61,7 @@ const Header = () => {
             } transition-transform duration-500 max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
             <ul className="flex flex-col items-center gap-4 p-4 md:flex-row md:p-0 font-bold">
-              {headerNavigation.map((nav) => (
+              {navigation.map((nav) => (
                 <li key={nav.name}>
                   {nav.inTopPage && isTopPage ? (
                     <ScrollLink
