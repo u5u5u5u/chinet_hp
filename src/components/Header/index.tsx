@@ -29,7 +29,7 @@ const Header = () => {
         />
         <div className="flex items-center justify-between h-full text-white p-6">
           <Link href="/">
-            <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
+            <h1 className="font-mochiy text-2xl md:text-3xl font-extrabold ml-4">
               地球っ子ネットワーク
             </h1>
           </Link>
