@@ -14,7 +14,7 @@ const ContactForm = () => {
 
   const handleSubmit = async () => {
     const res = await fetch(
-      "https://docs.google.com/forms/u/0/d/e/1FAIpQLScJpohDzPnq70lgxa58dNkpFSOG4gpc6yFd1LrzEq_FvEL24Q/formResponse",
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfFsTf2YT_xrZasI5PFzcE47e3JeLk6UdUxE6Db0uwOQIB6hw/formResponse",
       {
         method: "POST",
         mode: "no-cors",
@@ -22,11 +22,11 @@ const ContactForm = () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams({
-          "entry.797627393": formData.name,
-          "entry.585780840": formData.organization,
-          "entry.858662123": formData.email,
-          "entry.1238015225": formData.phone,
-          "entry.1901062255": formData.message,
+          "entry.1591240883": formData.name,
+          "entry.152476375": formData.organization,
+          "entry.555870479": formData.email,
+          "entry.1087619992": formData.phone,
+          "entry.2063429848": formData.message,
         }),
       }
     );
@@ -48,7 +48,7 @@ const ContactForm = () => {
         <form className="w-full" onSubmit={handleSubmit}>
           <Input
             label="お名前"
-            name="entry.797627393"
+            name="entry.1591240883"
             type="text"
             required
             placeholder="山田 太郎"
@@ -61,7 +61,7 @@ const ContactForm = () => {
           />
           <Input
             label="会社名/学校名"
-            name="entry.585780840"
+            name="entry.152476375"
             type="text"
             required
             placeholder="株式会社〇〇"
@@ -75,7 +75,7 @@ const ContactForm = () => {
           />
           <Input
             label="メールアドレス"
-            name="entry.858662123"
+            name="entry.555870479"
             type="email"
             required
             placeholder="example@example.com"
@@ -90,7 +90,7 @@ const ContactForm = () => {
           />
           <Input
             label="電話番号"
-            name="entry.1238015225"
+            name="entry.1087619992"
             type="tel"
             required
             placeholder="090-1234-5678"
@@ -105,7 +105,7 @@ const ContactForm = () => {
           />
           <Textarea
             label="お問い合わせ内容"
-            name="entry.1901062255"
+            name="entry.2063429848"
             required
             placeholder="お問い合わせ内容を入力してください。"
             className="mb-4"
