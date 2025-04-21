@@ -2,7 +2,7 @@ import Heading from "@/components/Heading";
 
 const About = () => {
   return (
-    <div className="w-[80%] py-20 mx-auto">
+    <div className="w-[80%] max-w-[700px] py-20 mx-auto">
       <Heading title="About" />
       <div className="text-base sm:text-lg md:text-xl text-center ">
         <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
@@ -25,7 +25,7 @@ const About = () => {
           <span className="inline-block">つながるような体験を</span>
           <span className="inline-block">届けることを目指し、</span>
           <span className="inline-block">
-            プログラミング教室、学習支援など、
+            プログラミング教室や学習支援など、
           </span>
           <span className="inline-block">さまざまな活動を行っています。</span>
         </p>
