@@ -4,11 +4,10 @@ type Props = {
   label: string;
   name?: string;
   className?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
-  onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onBlur?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
+  onFocus?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
   value?: string | number;
-  type?: string;
   placeholder?: string;
   disabled?: boolean;
   required?: boolean;
@@ -16,37 +15,34 @@ type Props = {
   autoFocus?: boolean;
   maxLength?: number;
   minLength?: number;
-  pattern?: string;
 };
 
-const Input = ({
+const Textarea = ({
   label,
   name,
+  className,
   autoComplete,
   autoFocus,
   maxLength,
   minLength,
-  pattern,
-  className,
-  type,
-  value,
   required,
   placeholder,
   disabled,
   onChange,
   onBlur,
   onFocus,
+  value,
 }: Props) => {
   return (
     <div className={`my-2 ${className}`}>
-      <label htmlFor="email" className="block text-sm font-bold mb-2">
+      <label htmlFor="message" className="block text-sm font-bold mb-2">
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
-      <input
-        type={type || "email"}
+      <textarea
+        id="message"
         name={name}
-        id="email"
+        rows={5}
         className="border border-gray-300 rounded-lg p-2 w-full"
         required={required}
         placeholder={placeholder}
@@ -59,9 +55,8 @@ const Input = ({
         autoFocus={autoFocus}
         maxLength={maxLength}
         minLength={minLength}
-        pattern={pattern}
-      />
+      ></textarea>
     </div>
   );
 };
-export default Input;
+export default Textarea;

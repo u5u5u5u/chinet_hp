@@ -13,8 +13,8 @@ const Model: React.FC<ModelProps> = ({ url }) => {
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.005;
-      meshRef.current.rotation.x += 0.005;
+      meshRef.current.rotation.y += 0.002;
+      meshRef.current.rotation.x += 0.001;
     }
   });
 
