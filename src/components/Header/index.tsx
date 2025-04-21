@@ -29,7 +29,7 @@ const Header = () => {
         />
         <div className="flex items-center justify-between h-full text-white p-6">
           <Link href="/">
-            <h1 className="text-2xl md:text-3xl font-extrabold ml-4">
+            <h1 className="font-mochiy text-2xl md:text-3xl font-extrabold ml-4">
               地球っ子ネットワーク
             </h1>
           </Link>
@@ -42,17 +42,17 @@ const Header = () => {
           >
             <div className="relative w-8 h-6">
               <span
-                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
+                className={`absolute block w-8 h-1 transform transition-transform duration-1000 ${
                   isOpen ? "rotate-45 top-2.5 bg-black" : "top-0 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 transform transition-opacity duration-500 ${
+                className={`absolute block w-8 h-1 transform transition-opacity duration-1000 ${
                   isOpen ? "opacity-0" : "top-2.5 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
+                className={`absolute block w-8 h-1 transform transition-transform duration-1000 ${
                   isOpen ? "-rotate-45 top-2.5 bg-black" : "top-5 bg-white"
                 }`}
               ></span>
@@ -62,7 +62,7 @@ const Header = () => {
             className={`fixed top-0 right-0 h-full text-black transform transition-all duration-1000 ease-in-out ${
               isOpen
                 ? "w-full bg-white/70 translate-x-0"
-                : "w-full translate-x-full bg-transparent opacity-0"
+                : "max-md:w-full translate-x-full bg-transparent max-md:opacity-0"
             } max-md:pt-24 md:static md:transform-none md:flex md:items-center md:gap-8 md:text-white`}
           >
             <ul className="flex flex-col items-center gap-4 md:flex-row md:p-0 font-bold">
