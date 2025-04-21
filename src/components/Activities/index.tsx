@@ -6,16 +6,17 @@ const Activities = () => {
     <div className="flex flex-col items-center bg-[#c2c2c2] text-black py-20">
       <Heading title="Activities" />
       <div className="space-y-10 w-[90%] max-w-[1000px]">
-        <section className="flex justify-between">
+        <section className="flex justify-center">
           <div className="w-[70%]">
             <Image
               src="/images/activity1.png"
               width={1000}
               height={1000}
               alt="Description of image 1"
+              className="w-[250px] h-[200px] sm:w-[350px] sm:h-[300px] md:w-[450px] md:h-[400px] lg:w-[550px] lg:h-[500px]"
             />
           </div>
-          <div className="flex flex-col justify-center space-y-2 w-[70%] border-white/10 border-2 shadow-xl rounded-[26%_74%_70%_30%_/_30%_26%_74%_70%] bg-white/30 backdrop-blur-sm pt-6 px-9 sm:px-16 md:px-24 lg:px-32 pb-8 sm:py-14 md:pb-20 lg:py-24 mt-32 md:mt-40 lg:mt-48 -ml-32">
+          <div className="flex flex-col justify-center space-y-2 w-[250px] h-[200px] sm:w-[350px] sm:h-[300px] md:w-[450px] md:h-[400px] lg:w-[550px] lg:h-[500px] border-white/10 border-2 shadow-xl rounded-[26%_74%_70%_30%_/_30%_26%_74%_70%] bg-white/30 backdrop-blur-sm pt-6 px-9 sm:px-16 md:px-24 lg:px-24 pb-8 sm:py-14 md:pb-20 lg:py-24 mt-32 md:mt-40 lg:mt-48 -ml-32">
             <h3 className="sm:text-lg md:text-xl lg:text-3xl font-bold">
               01 ボランティア活動
             </h3>
@@ -26,7 +27,7 @@ const Activities = () => {
           </div>
         </section>
         <section className="flex justify-between">
-          <div className="flex flex-col justify-center space-y-2 w-[70%] border-white/10 border-2 shadow-xl rounded-[26%_74%_70%_30%_/_30%_26%_74%_70%] bg-white/30 backdrop-blur-sm pt-6 px-9 sm:px-16 md:px-24 lg:px-32 pb-8 sm:py-14 md:pb-20 lg:py-24 mt-32 md:mt-40 lg:mt-48 -mr-32">
+          <div className="flex flex-col justify-center space-y-2 w-[250px] h-[200px] sm:w-[350px] sm:h-[300px] md:w-[450px] md:h-[400px] lg:w-[550px] lg:h-[500px] border-white/10 border-2 shadow-xl rounded-[26%_74%_70%_30%_/_30%_26%_74%_70%] bg-white/30 backdrop-blur-sm pt-6 px-9 sm:px-16 md:px-24 lg:px-24 pb-8 sm:py-14 md:pb-20 lg:py-24 mt-32 md:mt-40 lg:mt-48 -mr-32">
             <h3 className="sm:text-lg md:text-xl lg:text-3xl font-bold">
               02 イベント開催
             </h3>
@@ -41,6 +42,7 @@ const Activities = () => {
               width={1000}
               height={1000}
               alt="Description of image 2"
+              className="w-[250px] h-[200px] sm:w-[350px] sm:h-[300px] md:w-[450px] md:h-[400px] lg:w-[550px] lg:h-[500px]"
             />
           </div>
         </section>
