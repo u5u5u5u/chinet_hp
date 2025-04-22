@@ -39,24 +39,24 @@ const Header = () => {
           >
             <div className="relative w-8 h-6">
               <span
-                className={`absolute block w-8 h-1 transform transition-transform duration-1000 ${
+                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
                   isOpen ? "rotate-45 top-2.5 bg-black" : "top-0 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 transform transition-opacity duration-1000 ${
+                className={`absolute block w-8 h-1 transform transition-opacity duration-500 ${
                   isOpen ? "opacity-0" : "top-2.5 bg-white"
                 }`}
               ></span>
               <span
-                className={`absolute block w-8 h-1 transform transition-transform duration-1000 ${
+                className={`absolute block w-8 h-1 transform transition-transform duration-500 ${
                   isOpen ? "-rotate-45 top-2.5 bg-black" : "top-5 bg-white"
                 }`}
               ></span>
             </div>
           </button>
           <nav
-            className={`fixed top-0 right-0 h-full text-black transform transition-all duration-1000 ease-in-out ${
+            className={`fixed top-0 right-0 h-full text-black transform transition-all duration-500 ease-in-out ${
               isOpen
                 ? "w-full bg-white/70 translate-x-0"
                 : "max-md:w-full translate-x-full bg-transparent max-md:opacity-0"
