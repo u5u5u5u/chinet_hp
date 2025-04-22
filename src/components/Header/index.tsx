@@ -35,10 +35,7 @@ const Header = () => {
           </Link>
           <button
             className="md:hidden block focus:outline-none z-10"
-            onClick={() => {
-              setIsOpen(!isOpen);
-              console.log(isOpen);
-            }}
+            onClick={() => setIsOpen(!isOpen)}
           >
             <div className="relative w-8 h-6">
               <span
