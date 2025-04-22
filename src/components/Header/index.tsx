@@ -72,15 +72,24 @@ const Header = () => {
                       duration={500}
                       offset={-100}
                       onClick={closeMenu}
+                      className="text-xl md:text-base"
                     >
                       {nav.name}
                     </ScrollLink>
                   ) : nav.inTopPage ? (
-                    <Link href={`/#${nav.href}`} onClick={closeMenu}>
+                    <Link
+                      href={`/#${nav.href}`}
+                      onClick={closeMenu}
+                      className="text-xl md:text-base"
+                    >
                       {nav.name}
                     </Link>
                   ) : (
-                    <Link href={`/${nav.href}`} onClick={closeMenu}>
+                    <Link
+                      href={`/${nav.href}`}
+                      onClick={closeMenu}
+                      className="text-xl md:text-base"
+                    >
                       {nav.name}
                     </Link>
                   )}
