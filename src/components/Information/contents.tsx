@@ -36,7 +36,7 @@ export const InformationContents: InformationContentsProps[] = [
           />
         </Link>
         <Link href="https://x.com/chinet_kit" target="_blank">
-          <Image src="/icons/x.svg" width={40} height={40} alt="X" />
+          <img src="/icons/x.svg" alt="X" className="w-[40px] h-auto" />
         </Link>
       </div>
     ),

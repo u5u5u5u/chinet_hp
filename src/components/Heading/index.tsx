@@ -10,7 +10,7 @@ const Heading = (props: HeadingProps) => {
       .replace(/[^a-z0-9-]/g, "");
 
   return (
-    <div className="text-center w-fit mx-auto mb-10">
+    <div className="text-center w-fit mx-auto mb-14">
       <h2 className="text-2xl md:text-5xl font-bold" id={slugify(props.title)}>
         {props.title}
       </h2>

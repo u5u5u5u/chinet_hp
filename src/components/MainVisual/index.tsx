@@ -5,7 +5,7 @@ const MainVisual = () => {
     <div className="flex flex-col bg-gradient-to-br from-[#5260FF] to-[#03FF4E] text-white pt-20">
       <div className="flex items-center">
         <Earth />
-        <h1 className="absolute right-10 sm:right-10 lg:right-6 xl:right-20 text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-loose">
+        <h1 className="absolute right-8 sm:right-10 lg:right-6 xl:right-20 text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-loose [text-shadow:5px_2px_5px_rgba(0,0,0,0.5)]">
           <span>子どもたちの</span>
           <br />
           <span className="block pl-10 sm:pl-20 lg:pl-[10rem] sm:mt-20">
