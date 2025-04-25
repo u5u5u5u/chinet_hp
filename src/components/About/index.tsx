@@ -8,15 +8,14 @@ const About = () => {
         <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
           <span className="inline-block">地球っ子ネットワークは</span>
           <span className="inline-block">
-            九工大の学生と（株）麻生、 飯塚市が
+            九工大の学生と(株)麻生、 飯塚市が
           </span>
           <span className="inline-block">連携して活動する</span>
           <span className="inline-block">教育ボランティア団体です。</span>
         </p>
         <p className="leading-[2] sm:leading-[3] md:leading-[4] mb-4">
-          <span className="inline-block">
-            子どもたちの可能性を少しでも広げたい
-          </span>
+          <span className="inline-block">子どもたちの可能性を</span>
+          <span className="inline-block">少しでも広げたい</span>
           <span className="inline-block">思いを持った大学生たちが</span>
           <span className="inline-block">活動しています。</span>
         </p>
@@ -33,9 +32,8 @@ const About = () => {
           <span className="inline-block">
             九工大生ならではのアイデアを活かして、
           </span>
-          <span className="inline-block">
-            地域に根ざした教育支援を実践しています。
-          </span>
+          <span className="inline-block">地域に根ざした教育支援を</span>
+          <span className="inline-block">実践しています。</span>
         </p>
       </div>
     </div>

@@ -10,6 +10,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
+import CategoryBadge from "@/components/CategoryBadge";
+import { formatDate } from "@/lib/formatDate";
 
 interface NewsCarouselProps {
   data: {
@@ -34,7 +36,11 @@ const NewsCarousel = ({ data }: NewsCarouselProps) => {
     >
       <CarouselContent>
         {data.contents.map((content, index) => (
-          <Link href={`/news/${content.id}`} key={index} className="flex flex-col">
+          <Link
+            href={`/news/${content.id}`}
+            key={index}
+            className="flex flex-col"
+          >
             <CarouselItem key={index} className="basis-1/3">
               <div className="flex p-1">
                 <Card className="w-[320px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
@@ -42,18 +48,20 @@ const NewsCarousel = ({ data }: NewsCarouselProps) => {
                     <Image
                       src={content.thumbnail.url}
                       alt={content.title}
-                      width={320}
-                      height={240}
+                      width={content.thumbnail.width}
+                      height={content.thumbnail.height}
                       className="w-full h-auto"
                     />
                   )}
                   <CardHeader className="p-3">
                     <p className="text-xs text-gray-500">
-                      {content.publishedAt}
+                      {content.publishedAt
+                        ? formatDate(content.publishedAt)
+                        : "日付不明"}
                     </p>
-                    <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-md">
-                      News
-                    </span>
+                    <div>
+                      <CategoryBadge category={content.category} />
+                    </div>
                     <CardTitle className="text-sm mt-1">
                       {content.title}
                     </CardTitle>
