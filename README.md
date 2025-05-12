@@ -93,4 +93,5 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 - Akkey
 - Hinata
 - **Semikoron**
+- natsuki
 - morito
