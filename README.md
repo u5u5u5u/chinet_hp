@@ -90,4 +90,5 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 - U5
 - kanyamato
 - mizo
+- Akkey
 - **Semikoron**
