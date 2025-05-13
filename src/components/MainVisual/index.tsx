@@ -6,7 +6,7 @@ const MainVisual = () => {
       <div className="flex items-center">
         <Earth />
         <h1 className="absolute right-8 sm:right-10 lg:right-6 xl:right-20 text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-loose [text-shadow:5px_2px_5px_rgba(0,0,0,0.5)]">
-          <span>子ども達の</span>
+          <span>子どもたちの</span>
           <br />
           <span className="block pl-10 sm:pl-20 lg:pl-[10rem] sm:mt-20">
             未来のために
