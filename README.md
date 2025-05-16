@@ -90,4 +90,10 @@ https://github.com/manabuyasuda/coding-guidelines/blob/master/css/css-naming-lis
 - U5
 - kanyamato
 - mizo
+- Akkey
+- Hinata
 - **Semikoron**
+- natsuki
+- morito
+- kirin
+- karasi
