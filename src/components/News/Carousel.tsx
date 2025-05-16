@@ -43,14 +43,14 @@ const NewsCarousel = ({ data }: NewsCarouselProps) => {
           >
             <CarouselItem key={index} className="basis-1/3">
               <div className="flex p-1">
-                <Card className="w-[320px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+                <Card className="w-[320px] h-[380px] bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
                   {content.thumbnail?.url && (
                     <Image
                       src={content.thumbnail.url}
                       alt={content.title}
                       width={content.thumbnail.width}
                       height={content.thumbnail.height}
-                      className="w-full h-auto"
+                      className="w-full h-3/4 object-cover"
                     />
                   )}
                   <CardHeader className="p-3">
