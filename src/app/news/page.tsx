@@ -1,8 +1,8 @@
 const News = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <h1>News</h1>
+      <div className="w-full h-full px-6 py-36 flex flex-col items-center">
+        <h1 className="text-3xl">Coming soon ...</h1>
       </div>
     </>
   );

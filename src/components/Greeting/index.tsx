@@ -8,7 +8,8 @@ const Greeting = () => {
         <Heading title="Greeting" />
         <div className="flex max-md:flex-col items-center justify-center space-y-8 md:space-x-10 w-full">
           <Image
-            src="https://dummyimage.com/600x400/9d9d9d/ffffff"
+            // src="https://dummyimage.com/600x400/9d9d9d/ffffff"
+            src="/dummy-greeting.png"
             width={600}
             height={400}
             alt="representative"

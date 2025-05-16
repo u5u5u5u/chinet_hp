@@ -8,7 +8,7 @@ export const heroNavigation: NavigationType[] = [
   {
     title: "News",
     sub_title: "お知らせ",
-    href: "/news/",
+    href: "/news",
   },
   {
     title: "Contact",
