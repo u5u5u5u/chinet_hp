@@ -9,6 +9,8 @@ interface Props {
 }
 
 const Article = ({ article }: Props) => {
+
+  console.log("article", article);
   // デバッグ用のログ（開発時のみ）
   if (process.env.NODE_ENV === "development") {
     console.log("Article data:", {
@@ -45,7 +47,7 @@ const Article = ({ article }: Props) => {
           </p>
           <p className="text-left py-1">
             更新日<span className="text-sm mx-3">:</span>
-            {article.createdAt ? formatDate(article.createdAt) : "日付不明"}
+            {article.revisedAt ? formatDate(article.revisedAt) : "日付不明"}
           </p>
         </div>
         {article.contents && typeof article.contents === "string" ? (
