@@ -11,13 +11,24 @@ interface Props {
 }
 
 const ArticleDetail = async ({ params, searchParams }: Props) => {
-  const { contentId } = await params;
-  const { dk } = await searchParams;
-  const article: ArticleType = await getArticleDetail(contentId, {
-    draftKey: dk,
-  }).catch(notFound);
+  try {
+    const { contentId } = await params;
+    const { dk } = await searchParams;
+    
+    // プレビューキーが存在する場合のみdraftKeyを設定
+    const queries = dk ? { draftKey: dk } : {};
+    
+    const article: ArticleType = await getArticleDetail(contentId, queries);
+    
+    if (!article) {
+      notFound();
+    }
 
-  return <Article article={article} />;
+    return <Article article={article} />;
+  } catch (error) {
+    console.error('Article fetch error:', error);
+    notFound();
+  }
 };
 
 export default ArticleDetail;

@@ -9,6 +9,15 @@ interface Props {
 }
 
 const Article = ({ article }: Props) => {
+  // デバッグ用のログ（開発時のみ）
+  if (process.env.NODE_ENV === "development") {
+    console.log("Article data:", {
+      title: article.title,
+      contentsType: typeof article.contents,
+      contentsValue: article.contents,
+    });
+  }
+
   return (
     <article className="full-width px-6 py-36 flex flex-col items-center">
       <div className="flex flex-col items-center max-w-screen-lg bg-slate-200 px-9 py-12 rounded-lg text-gray-800 max-md:px-2 max-md:py-6">
@@ -39,10 +48,16 @@ const Article = ({ article }: Props) => {
             {article.createdAt ? formatDate(article.createdAt) : "日付不明"}
           </p>
         </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: article.contents }}
-          className={styles.article}
-        />
+        {article.contents && typeof article.contents === "string" ? (
+          <div
+            dangerouslySetInnerHTML={{ __html: article.contents }}
+            className={styles.article}
+          />
+        ) : (
+          <div className={styles.article}>
+            <p>コンテンツがありません</p>
+          </div>
+        )}
       </div>
     </article>
   );
