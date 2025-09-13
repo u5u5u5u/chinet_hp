@@ -41,10 +41,15 @@ export const getArticleDetail = async (
   contentId: string,
   queries?: MicroCMSQueries
 ) => {
-  const detailData = await client.get<Article>({
-    endpoint: "articles",
-    contentId: `${contentId}`,
-    queries,
-  });
-  return detailData;
+  try {
+    const detailData = await client.get<Article>({
+      endpoint: "articles",
+      contentId: `${contentId}`,
+      queries,
+    });
+    return detailData;
+  } catch (error) {
+    console.error('MicroCMS API Error:', error);
+    throw error;
+  }
 };
