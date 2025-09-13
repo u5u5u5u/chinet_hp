@@ -7,14 +7,14 @@ const Greeting = () => {
       <div className="flex flex-col items-center justify-center w-[80%] max-w-[1000px] mx-auto">
         <Heading title="Greeting" />
         <div className="flex max-md:flex-col items-center justify-center space-y-8 md:space-x-10 w-full">
-          <Image
+          {/* <Image
             // src="https://dummyimage.com/600x400/9d9d9d/ffffff"
             src="/dummy-greeting.png"
             width={600}
             height={400}
             alt="representative"
             className="w-[80%] md:w-[50%] rounded-lg"
-          />
+          /> */}
           <div className="w-[80%] md:w-[50%] max-sm:text-[0.8rem] ">
             <p className="mb-2">
               <span className="inline-block">
@@ -44,7 +44,7 @@ const Greeting = () => {
               <span className="inline-block">成長してきました。</span>
             </p>
             <p className="mb-2">今後とも、どうぞよろしくお願いいたします。</p>
-            <p className="mt-4">
+            <p className="text-right mt-4">
               <span className="mr-4">代表</span>陣内 勇冴
             </p>
           </div>
