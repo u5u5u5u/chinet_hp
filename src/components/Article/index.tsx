@@ -10,7 +10,6 @@ interface Props {
 
 const Article = ({ article }: Props) => {
 
-  console.log("article", article);
   // デバッグ用のログ（開発時のみ）
   if (process.env.NODE_ENV === "development") {
     console.log("Article data:", {
