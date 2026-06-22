@@ -17,8 +17,7 @@ $ npm run dev    // 実行
 
 ### 必須
 
-- Prettier - Code formatter
-- ESLint
+- Biome
 
 ### 推奨
 
