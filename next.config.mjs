@@ -1,4 +1,4 @@
-import path from "path";
+import path from "node:path";
 
 /** @type {import('next').NextConfig} */
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     serverActions: {
-      bodySizeLimit: '2mb',
+      bodySizeLimit: "2mb",
     },
   },
   sassOptions: {
