@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Heading from "@/components/Heading";
 
+const MESSAGE = [["私たちは、子どもたちにさまざまな体験や人との出会いを通して、","挑戦する楽しさや仲間と協力する大切さを感じてもらいたい","という思いで活動しています。"],
+["また、大学生という子どもたちに近い立場だからこそ、一人ひとりに寄り添いながら多くの活動に取り組み、子どもたちと共に","私たち自身も成長していきたいと考えています。"],
+["今後とも、地球っ子ネットワークへの温かいご支援とご協力を","よろしくお願いいたします。"]];
+const REP = ["中本　あやり","浦埜　彩菜" ]
+
 const Greeting = () => {
   return (
     <div className="bg-[#c2c2c2] text-black py-20">
@@ -16,37 +21,20 @@ const Greeting = () => {
             className="w-[80%] md:w-[50%] rounded-lg"
           /> */}
           <div className="w-[80%] md:w-[50%] max-sm:text-[0.8rem] ">
-            <p className="mb-2">
-              <span className="inline-block">
-                楽しそうに活動する子どもたちの笑顔。
-              </span>
-              <span className="inline-block">
-                わからなかったことが「できた！」
-              </span>
-              <span className="inline-block">に変わった瞬間の</span>
-              <span className="inline-block">キラキラした表情。</span>
-            </p>
-            <p className="mb-2">
-              <span className="inline-block">そんな姿に、私たちも多くの</span>
-              <span className="inline-block">元気と学びをもらっています。</span>
-            </p>
-            <p className="mb-2">
-              <span className="inline-block">
-                活動を支えてくださる地域の皆さま、
-              </span>
-              <span className="inline-block">企業の皆さま、</span>
-              <span className="inline-block">そして一緒に取り組んでくれる</span>
-              <span className="inline-block">仲間たちのおかげで、</span>
-              <span className="inline-block">
-                地球っ子ネットワークは少しずつ、
-              </span>
-              <span className="inline-block">地域に根ざした団体として</span>
-              <span className="inline-block">成長してきました。</span>
-            </p>
-            <p className="mb-2">今後とも、どうぞよろしくお願いいたします。</p>
+            {MESSAGE.map((paragraph, pIdx) => (
+                // biome-ignore lint/suspicious/noArrayIndexKey: 静的なテキスト配列のためインデックスで安全
+                <p key={pIdx} className="mb-2">
+                  {paragraph.map((chunk, cIdx) => (
+                    // biome-ignore lint/suspicious/noArrayIndexKey: 静的なテキスト配列のためインデックスで安全
+                    <span key={cIdx} className="inline-block">
+                      {chunk}
+                    </span>)
+                )}
+                </p>
+              )
+            )}
             <p className="text-right mt-4">
-              <span className="mr-4">代表</span>陣内 勇冴
-            </p>
+              <span className="mr-4">代表</span>{REP.join("　")}</p>
           </div>
         </div>
       </div>
