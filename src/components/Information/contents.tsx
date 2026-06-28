@@ -18,7 +18,7 @@ export const InformationContents: InformationContentsProps[] = [
   },
   {
     title: "代表者",
-    detail: "陣内 勇冴",
+    detail: "浦埜 彩菜　中本 あやり",
   },
   {
     title: "SNS",
