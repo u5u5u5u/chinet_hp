@@ -33,8 +33,15 @@ const Greeting = () => {
                 </p>
               )
             )}
-            <p className="text-right mt-4">
-              <span className="mr-4">代表</span>{REP.join("　")}</p>
+            <div className="mt-4 flex justify-end text-right">
+              <span className="mr-4">代表</span>
+                <div className="text-left">
+                  {REP.map((name, ndx) => (
+                    // biome-ignore lint/suspicious/noArrayIndexKey: 静的なテキスト配列のためインデックスで安全
+                    <div key={ndx}>{name}</div>
+                  ))}
+                </div>
+            </div>
           </div>
         </div>
       </div>
